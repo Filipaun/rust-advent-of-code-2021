@@ -1,3 +1,8 @@
+mod days;
+
+pub use crate::days::day1;
+
 fn main() {
-    println!("Hello, world!");
+    day1::day1fn(true);
+
 }
