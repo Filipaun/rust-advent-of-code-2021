@@ -1,6 +1,6 @@
 use std::fs;
 
-pub fn day1fn(_debug: bool) {
+pub fn day1_fn(_debug: bool) {
     let numbers: Vec<i32> = read_file();
 
     day1_part1(&numbers,_debug);
@@ -8,7 +8,7 @@ pub fn day1fn(_debug: bool) {
 }
 
 fn read_file() -> Vec<i32> {
-    let contents = fs::read_to_string("src/days/day1_input.txt")
+    let contents = fs::read_to_string("src/days/inputs/day1_input.txt")
         .expect("Unable to read file");
     //println!("{}",contents);
     let numbers: Vec<i32> = contents.split("\n")
